@@ -1,4 +1,130 @@
 body {
-  background-color: white;
+  background-color: #402074;
   font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #c4c4c4;
+}
+
+nav {
+  background-color: #402074;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center-align the contents horizontally */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Style for introduction */
+p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.main-pic {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Styles for product section */
+.product-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+/* Styles for product card */
+.product-card {
+  color: #402074;
+  border: 2px solid #402074;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  background-color: #f8f5fc;
+}
+
+/* Style for product image */
+.product-pic {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Style for product link */
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dark mode adjustments */
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #c4c4c4;
+}
+
+.dark-mode a {
+  color: #c4c4c4;
+}
+
+.dark-mode h1 {
+  color: #c4c4c4;
+}
+
+.dark-mode p {
+  color: #aaa;
+}
+
+.dark-mode .product-card {
+  color: #c4c4c4;
+  border: 2px solid #c4c4c4;
+  background-color: #1a1a1a;
+}
+
+.dark-mode .product-card:hover {
+  background-color: #2a2a2a;
 }

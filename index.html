@@ -1,3 +1,4 @@
+<!-- <!DOCTYPE html> -->
 <html lang="en">
   <head>
     <!-- not to be confused with the <header> -->
@@ -17,9 +18,9 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -31,49 +32,82 @@
         Cadbury, and savor the classic, creamy taste that defines our delectable
         treats.
       </p>
+      <button id="dark-mode-toggle">Dark Mode</button>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const darkModeToggle = document.getElementById('dark-mode-toggle')
+          const body = document.body
+
+          darkModeToggle.addEventListener('click', function () {
+            body.classList.toggle('dark-mode')
+          })
+        })
+      </script>
     </header>
     <main>
       <section id="title-section">
         <h2></h2>
         <p></p>
-        <img src="chocolate.png" alt="Cadbury Dairy Milk" class="main-pic" />
+        <img
+          src="https://admin.itsnicethat.com/images/R2rxuhiOfC9NDljL5FmciXDNhjE=/184009/format-webp%7Cwidth-1440/bulletproof_cadbury_dairy_milk_rebrand_graphic_design_itsnicethatGLO_Logo.jpg"
+          alt="Cadbury Dairy Milk"
+          class="main-pic"
+        />
       </section>
 
-      <section>
-        <div class="post sighting">
-          <h3>Dairy Milk Crunchie Bar</h3>
-          <img
-            src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/a/cadbury_cdm_crunchie180g_front.jpg"
-            alt="Dairy Milk Crunchie Bar"
-          />
-          <p>£2.49</p>
+      <section class="product-section">
+        <div class="product-card">
+          <a href="products/dairy-milk-crunchie-bar.html" class="product-link">
+            <h3>Dairy Milk Crunchie Bar</h3>
+            <img
+              src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/a/cadbury_cdm_crunchie180g_front.jpg"
+              alt="Dairy Milk Crunchie Bar"
+              class="product-pic"
+            />
+            <p>£2.49</p></a
+          >
         </div>
 
-        <div class="post sighting">
-          <h3>Dairy Milk Fruit & Nut Bar</h3>
-          <img
-            src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/d/a/dairy_milk_cdm_fn180g_front.jpg"
-            alt="Dairy Milk Fruit & Nut Bar"
-          />
-          <p>£2.49</p>
+        <div class="product-card">
+          <a href="products/dairy-milk-fruit-nut-bar.html" class="product-link">
+            <h3>Dairy Milk Fruit & Nut Bar</h3>
+            <img
+              src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/d/a/dairy_milk_cdm_fn180g_front.jpg"
+              alt="Dairy Milk Fruit & Nut Bar"
+              class="product-pic"
+            />
+            <p>£2.49</p></a
+          >
         </div>
 
-        <div class="post sighting">
-          <h3>Dairy Milk Chocolate Oreo Bar</h3>
-          <img
-            src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/d/cdm_oreo_front_3.jpg"
-            alt="Dairy Milk Chocolate Oreo Bar"
-          />
-          <p>£1.49</p>
+        <div class="product-card">
+          <a
+            href="products/dairy-milk-chocolate-oreo-bar.html"
+            class="product-link"
+          >
+            <h3>Dairy Milk Chocolate Oreo Bar</h3>
+            <img
+              src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/d/cdm_oreo_front_3.jpg"
+              alt="Dairy Milk Chocolate Oreo Bar"
+              class="product-pic"
+            />
+            <p>£1.49</p></a
+          >
         </div>
 
-        <div class="post">
-          <h3>Cdbury Dairy Milk Daim Bar</h3>
-          <img
-            src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/d/cdm_daim_front_1_1.jpg"
-            alt="Cdbury Dairy Milk Daim Bar"
-          />
-          <p>£1.49</p>
+        <div class="product-card">
+          <a
+            href="products/cdbury-dairy-milk-daim-bar.html"
+            class="product-link"
+          >
+            <h3>Cdbury Dairy Milk Daim Bar</h3>
+            <img
+              src="https://www.cadburygiftsdirect.co.uk/media/catalog/product/cache/d781fed7f79dc069f26dcbeb98b1f140/c/d/cdm_daim_front_1_1.jpg"
+              alt="Cdbury Dairy Milk Daim Bar"
+              class="product-pic"
+            />
+            <p>£1.49</p></a
+          >
         </div>
       </section>
     </main>
@@ -83,3 +117,4 @@
     </footer>
   </body>
 </html>
+hey guys lol - do you guys mind if i add to it in my own time ? - foridha
