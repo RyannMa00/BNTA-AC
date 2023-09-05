@@ -1,21 +1,29 @@
 <!-- <!DOCTYPE html> -->
 <html lang="en">
   <head>
-    <!-- not to be confused with the <header> -->
     <!-- not visible - contains meta-data used by the browser -->
-
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
-    <title>Shop Cadbury</title>
-    <!-- comment here-->
+    <title>Shop Cadbury Dairy Milk</title>
   </head>
 
   <body>
     <!-- all visiblle -->
     <header>
+      <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">Cadbury</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+      </div>   
+      <!--  
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -23,15 +31,9 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-
+-->
       <h1>All about Cadbury Dairy Milk</h1>
-      <p>
-        Crafted with the indulgent richness of a glass and a half of fresh milk,
-        Cadbury delivers that timeless, velvety flavor that's simply
-        unmistakable. Explore our online shop, your destination for all things
-        Cadbury, and savor the classic, creamy taste that defines our delectable
-        treats.
-      </p>
+
       <button id="dark-mode-toggle">Dark Mode</button>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -44,15 +46,17 @@
         })
       </script>
     </header>
+
     <main>
       <section id="title-section">
-        <h2></h2>
-        <p></p>
-        <img
-          src="https://admin.itsnicethat.com/images/R2rxuhiOfC9NDljL5FmciXDNhjE=/184009/format-webp%7Cwidth-1440/bulletproof_cadbury_dairy_milk_rebrand_graphic_design_itsnicethatGLO_Logo.jpg"
+        <p> Crafted with the indulgent richness of a glass and a half of fresh
+          milk, Cadbury delivers that timeless, velvety flavor that's simply
+          unmistakable. Explore our online shop, your destination for all things
+          Cadbury, and savor the classic, creamy taste that defines our
+          delectable treats.</p>
+        <img src="https://admin.itsnicethat.com/images/R2rxuhiOfC9NDljL5FmciXDNhjE=/184009/format-webp%7Cwidth-1440/bulletproof_cadbury_dairy_milk_rebrand_graphic_design_itsnicethatGLO_Logo.jpg"
           alt="Cadbury Dairy Milk"
-          class="main-pic"
-        />
+          class="main-pic"/>
       </section>
 
       <section class="product-section">
@@ -64,6 +68,7 @@
               alt="Dairy Milk Crunchie Bar"
               class="product-pic"
             />
+            <p>Golden honeycomb center covered in Cadbury Dairy Milk chocolate.</p>
             <p>£2.49</p></a
           >
         </div>
@@ -76,6 +81,7 @@
               alt="Dairy Milk Fruit & Nut Bar"
               class="product-pic"
             />
+            <p>Crunchy nuts and dried fruits mixed with Dairy Milk.</p>
             <p>£2.49</p></a
           >
         </div>
@@ -91,6 +97,7 @@
               alt="Dairy Milk Chocolate Oreo Bar"
               class="product-pic"
             />
+            <p>The delightful fusion of Cadbury Dairy Milk and Oreo cookies.</p>
             <p>£1.49</p></a
           >
         </div>
@@ -117,4 +124,3 @@
     </footer>
   </body>
 </html>
-hey guys lol - do you guys mind if i add to it in my own time ? - foridha
