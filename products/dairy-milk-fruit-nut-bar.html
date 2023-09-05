@@ -11,13 +11,35 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="navbar">
+          <div class="navdiv">
+            <img
+              src="https://tonimarino.co.uk/wp-content/uploads/2020/04/cadbury-logo.jpg"
+              alt="Cadbury Logo"
+              class="logo-img"
+            />
+
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+            </ul>
+            <button id="dark-mode-toggle">Dark Mode</button>
+          </div>
+        </nav>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const darkModeToggle = document.getElementById('dark-mode-toggle')
+          const body = document.body
+
+          darkModeToggle.addEventListener('click', function () {
+            body.classList.toggle('dark-mode')
+          })
+        })
+      </script>
 
       <h1>Dairy Milk Fruit & Nut Bar</h1>
     </header>
@@ -27,6 +49,7 @@
         alt="Dairy Milk Fruit & Nut Bar"
         class="main-pic"
       />
+      <p>Crunchy nuts and dried fruits mixed with Dairy Milk.</p>
     </main>
 
     <footer>

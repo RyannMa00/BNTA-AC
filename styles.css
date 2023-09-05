@@ -10,34 +10,48 @@ body {
   color: #c4c4c4;
 }
 
-nav {
+.navbar {
   background-color: #402074;
-  padding: 10px;
-  display: flex;
-  justify-content: center; /* Center-align the contents horizontally */
+  font-family: 'Poppins', sans-serif;
+  padding-right: 10px;
+  /* padding-left: 10px; */
+  text-transform: uppercase;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
 }
 
 li {
+  list-style: none;
   display: inline-block;
-  margin-right: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
+li a {
+  color: white;
+  font-size: 18px;
   font-weight: bold;
-  transition: color 0.3s;
+  margin-right: 15px;
+  width: 80px;
+  padding: 5px;
+  margin-left: 6px;
+  text-decoration: none; /* Remove underline */
 }
 
-a:hover {
-  text-decoration: underline;
-  font-weight: 600;
+nav a:hover {
+  color: #402074;
+  background-color: #d7d3de;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
 h1 {
@@ -127,4 +141,26 @@ p {
 
 .dark-mode .product-card:hover {
   background-color: #2a2a2a;
+}
+
+#dark-mode-toggle {
+  font-family: 'Poppins', sans-serif;
+  color: #402074;
+  background-color: #fff;
+  border: 2px solid #402074;
+  border-radius: 10px;
+}
+
+#dark-mode-toggle:hover {
+  color: #402074;
+  background-color: #837b91;
+  border: #837b91;
+}
+
+.logo-img {
+  max-width: 10%;
+  max-height: 30%;
+  display: block;
+  float: left;
+  border-radius: 20px;
 }
